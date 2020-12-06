@@ -1,0 +1,234 @@
+/* 
+redest: 223, 18, 51
+redless: 116, 36, 51  
+Blackish: 43, 41, 44
+Black: 28, 28, 43
+Blackest: 20, 28, 42
+*/
+* {
+}
+body {
+  /* background-image: radial-gradient(
+    circle,
+    rgba(166, 166, 166, 1) 0%,
+    rgba(90, 91, 92, 1) 100%
+  ); */
+  background-image: url(Images/cool-background1.png);
+}
+#cajaAcorde {
+  margin: 5% 40% 0% 40%;
+  border: solid 2px rgb(43, 41, 44);
+  height: 700px;
+  min-width: 350px;
+  padding: 2%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+#containInput {
+  display: grid;
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+input {
+  text-align: center;
+  font-size: 20px;
+  min-width: 0;
+  border: solid 2px;
+  background: transparent;
+  border: none;
+  border-bottom: solid black 2px;
+  outline: none;
+  font-size: 2.5em;
+  color: rgb(102, 11, 97);
+}
+::placeholder {
+  color: rgb(102, 11, 97);
+}
+#elBoton {
+  height: 120px;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border-radius: 50%;
+  border: solid 3px rgb(43, 41, 44);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(73, 69, 69) 0%, rgb(49, 41, 41) 100%);
+  color: white;
+  font-size: 4em;
+}
+button:focus {
+  outline: 0;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#elBoton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#contenidodelacorde {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 2em;
+}
+#result {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 2;
+}
+#figuras {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-content: center;
+}
+#botones {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*-------------------Piano------------------*/
+
+.piano {
+  display: grid;
+  grid-template-columns: repeat(28, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 400px;
+}
+.tec1:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec2:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec3:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec4:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec5:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec6:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec7:hover {
+  background-color: rgb(237, 229, 222);
+}
+.tec1 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.tecb1 {
+  background-color: black;
+  border: solid black 2px;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  opacity: 100%;
+}
+.tec2 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.tecb2 {
+  background-color: black;
+  border: solid black 2px;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.tec3 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.tec4 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 13;
+  grid-column-end: 17;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.tecb3 {
+  background-color: black;
+  border: solid black 2px;
+  grid-column-start: 16;
+  grid-column-end: 18;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.tec5 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 17;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.tecb4 {
+  background-color: black;
+  border: solid black 2px;
+  grid-column-start: 20;
+  grid-column-end: 22;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.tec6 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 21;
+  grid-column-end: 25;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}
+.tecb5 {
+  background-color: black;
+  border: solid black 2px;
+  grid-column-start: 24;
+  grid-column-end: 26;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+.tec7 {
+  background-color: white;
+  background-size: auto;
+  border: solid black 2px;
+  grid-column-start: 25;
+  grid-column-end: 29;
+  grid-row-start: 1;
+  grid-row-end: 9;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="figuras">
+      <img id="figura1" src="Bm7b5 1.png" hidden alt="" />
+      <img id="figura2" src="Bm7b5 2.png" alt="" hidden />
+      <img id="figura3" src="Bm7b5 3.png" alt="" hidden />
+      <img id="figura4" src="Bm7b5 4.png" alt="" hidden />
+      <img id="figura5" src="Bm7b5 5.png" alt="" hidden />
+    </div>
+    <div id="botones">
+      <button id="btnShape1">Figura 1</button>
+      <button id="btnShape2">Figura 2</button>
+      <button id="btnShape3">Figura 3</button>
+      <button id="btnShape4">Figura 4</button>
+      <button id="btnShape5">Figura 5</button>
+    </div>
+    <!-- Usar un botón para ir mostrando diferentes dibujos del acorde. Mostrar y ocultar con jQuery -->
+    <script>
+      $("#btnShape1").click(function () {
+        $("#figura1").toggle(500, function () {
+          $("#figura2").hide(500);
+          $("#figura3").hide(500);
+          $("#figura5").hide(500);
+        });
+      });
+
+      $("#btnShape2").click(function () {
+        $("#figura2").toggle(500, function () {
+          $("#figura1").hide(500);
+          $("#figura3").hide(500);
+          $("#figura4").hide(500);
+          $("#figura5").hide(500);
+        });
+      });
+      $("#btnShape3").click(function () {
+        $("#figura3").toggle(500, function () {
+          $("#figura1").hide(500);
+          $("#figura2").hide(500);
+          $("#figura4").hide(500);
+          $("#figura5").hide(500);
+        });
+      });
+      $("#btnShape4").click(function () {
+        $("#figura4").toggle(500, function () {
+          $("#figura1").hide(500);
+          $("#figura2").hide(500);
+          $("#figura3").hide(500);
+          $("#figura5").hide(500);
+        });
+      });
+      $("#btnShape5").click(function () {
+        $("#figura5").toggle(500, function () {
+          $("#figura1").hide(500);
+          $("#figura2").hide(500);
+          $("#figura3").hide(500);
+          $("#figura4").hide(500);
+        });
+      });
+    </script>
+  </body>
+</html>
